@@ -84,7 +84,7 @@ function parseText(response) {
   }, "");
 }
 
-let dgflow = new DialogFlow("nuispring2020-ixsgie");
+let dgflow = new DialogFlow("nuispring2020-ixsgie"); // your own dialogflow project name
 const sessionId4 = uuid.v4();
 
 io.on("connection", function (socket) {
