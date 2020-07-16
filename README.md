@@ -8,3 +8,9 @@ This is how this web app works:
 2. Send your message to [Dialogflow](https://dialogflow.com/) (the natural language understanding platform which makes it easy to design and integrate a conversational user interface) API, running in node server, as a text string
 3. Wait fot the response from the `Dialogflow`: it returns the reply text or the audio
 4. If audio, then plays the audio otherwise use the `SpeechSynthesis` interface to give it a synthetic voice.
+
+## SETUP
+
+1. npm install
+2. Setup your DIALOGFLOW_PRIVATE_KEY and DIALOGFLOW_CLIENT_EMAIL in the env file
+3. npm start

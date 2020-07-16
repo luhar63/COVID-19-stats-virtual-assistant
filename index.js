@@ -21,8 +21,6 @@ io.on("connection", function (socket) {
   console.log("a user connected");
 });
 
-// const apiai = require("apiai")(APIAI_TOKEN);
-
 // Web UI
 app.get("/", (req, res) => {
   res.sendFile("index.html");
