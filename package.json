@@ -1,0 +1,19 @@
+{
+  "name": "covid-19-stats-demo",
+  "version": "1.0.0",
+  "description": "Track COVID-19 stats with Dialogflow",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rmaurya",
+  "license": "MIT",
+  "dependencies": {
+    "dialogflow": "^1.2.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "socketio": "^1.0.0",
+    "uuid": "^3.2.1"
+  }
+}

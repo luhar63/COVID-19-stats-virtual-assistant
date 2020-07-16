@@ -1,0 +1,219 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", "Helvetica Neue", "Helvetica", "Lucida Grande", Arial,
+    "Ubuntu", "Cantarell", "Fira Sans", sans-serif;
+  background: url(../images/geometry.png) 0 0;
+  color: #333;
+}
+
+.bg-image {
+  background: #f7f7f7 url(../images/whatsapp.png) 0 0;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-size: cover;
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer {
+  font-size: 0.75em;
+  color: silver;
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+}
+footer a {
+  color: #f80;
+}
+header {
+  margin: 2em 0;
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  text-align: center;
+}
+h1 {
+  font-weight: 400;
+  font-size: 3em;
+}
+h2 {
+  font-weight: 300;
+  margin-top: 0.5em;
+}
+section {
+  margin: 1.5em auto;
+  width: 600px;
+}
+button {
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 0;
+  border-radius: 50%;
+  padding: 0.7em 1em;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(180deg, #39c2c9 0%, #3fc8c9 80%, #3fc8c9 100%);
+  box-shadow: 2px 5px 30px rgba(63, 200, 201, 0.4);
+
+  will-change: transform, filter;
+  transition: all 0.3s ease-out;
+}
+button .fa {
+  font-size: 40px;
+  line-height: 40px;
+  margin: 0;
+  text-shadow: 1px 2px 2px #2a8b90;
+}
+button:hover {
+  transform: scale(1.1);
+}
+button:active {
+  filter: brightness(0.8);
+}
+button:focus {
+  outline: 0;
+}
+
+button.record {
+  background: linear-gradient(-120deg, #d62121, #c72c2c, #d24343);
+  box-shadow: 2px 5px 30px rgba(201, 63, 63, 0.4);
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.3em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 10px;
+}
+.fa-github::before {
+  content: "\f09b";
+}
+
+.conv-container {
+  min-height: 500px;
+  min-width: 400px;
+  border: 1px solid #000;
+  background: rgb(229, 221, 213) url(../images/whatsapp2.png) 0 0;
+  background-size: 35%;
+  padding: 20px 0;
+  overflow: auto;
+  max-height: 550px;
+  margin: 1rem;
+  box-sizing: border-box;
+}
+
+.recent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clear: both;
+  padding: 20px;
+}
+
+.recent .conv {
+  width: 100%;
+}
+.recent button {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.recent .loading {
+  padding: 0;
+  display: none;
+}
+.recent .micro {
+  display: inline-block;
+}
+
+.recent.loading .loading {
+  display: inline-block;
+}
+
+.recent.loading .micro {
+  display: none;
+}
+
+.message {
+  background-color: rgba(255, 255, 255, 0.87);
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+  border-radius: 7.5px;
+  margin-bottom: 0;
+  margin-bottom: 0;
+  max-width: 75%;
+  margin: 1rem;
+  padding: 10px;
+}
+
+.message p {
+  margin: 0;
+}
+
+.you-message {
+  float: right;
+  clear: both;
+}
+.you-message .message {
+  float: right;
+  position: relative;
+  background-color: #dcf8c6;
+}
+
+.you-message .message::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 2px solid transparent;
+  border-bottom: 10px solid transparent;
+  right: -10px;
+  top: 3px;
+  border-left: 11px solid #dcf8c6;
+}
+
+.bot-message {
+  float: left;
+  clear: both;
+}
+.bot-message .message {
+  float: left;
+  position: relative;
+}
+
+.bot-message .message::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 2px solid transparent;
+  border-bottom: 10px solid transparent;
+  left: -10px;
+  top: 3px;
+  border-right: 11px solid rgba(255, 255, 255, 0.87);
+}
+
+#youSaid,
+#botSaid {
+  display: none;
+}
