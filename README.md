@@ -12,5 +12,5 @@ This is how this web app works:
 ## SETUP
 
 1. npm install
-2. Setup your DIALOGFLOW_PRIVATE_KEY and DIALOGFLOW_CLIENT_EMAIL in the env file
+2. Setup your DIALOGFLOW_PRIVATE_KEY and DIALOGFLOW_CLIENT_EMAIL in the .env file
 3. npm start
